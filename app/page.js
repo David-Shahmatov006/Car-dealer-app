@@ -15,7 +15,7 @@ export default function FilterPage() {
     useEffect(() => {
         const fetchVehicleMakes = async () => {
             const response = await fetch(
-                `${process.env.NEXT_PUBLIC_MAKES_URL}`
+                `https://vpic.nhtsa.dot.gov/api/vehicles/GetMakesForVehicleType/car?format=json`
             );
             const data = await response.json();
             setMakes(
