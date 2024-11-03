@@ -5,12 +5,13 @@
     "private": true,
     "scripts": {
         "dev": "next dev",
-        "build": "next build",
+        "build": "next build && next export",
         "start": "next start",
         "lint": "next lint",
         "format": "prettier --write .",
         "predeploy": "npm run build",
-        "deploy": "gh-pages -d out"
+        "deploy": "gh-pages -d out",
+        "export": "next export"
     },
     "dependencies": {
         "bulma": "^1.0.2",
