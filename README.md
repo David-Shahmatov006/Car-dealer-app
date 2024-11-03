@@ -2,10 +2,12 @@
 
 In this app you can select vehicle make, model year and see all relevant vehicles
 
+P.S I had problems with the generateStaticParams function and I had to make a quick decision to meet the deadline, and I changed versions Next.js and React. Because of this, Tailwind stopped applying styles. But I found a way out of this situation, I replaced Tailwind with Bulma, the libraries are different, but the principle is the same.
+
 ### TECH STACK
 
 -   Next.js
--   Tailwind css
+-   Bulma
 -   Eslint
 -   Prettier
 

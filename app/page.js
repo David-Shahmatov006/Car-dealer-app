@@ -29,34 +29,48 @@ export default function FilterPage() {
     }, []);
 
     return (
-        <div className="flex min-h-screen flex-col items-center justify-center bg-gray-100 p-4">
-            <h1 className="mb-6 text-2xl font-bold">Choose your Vehicle</h1>
-            <div className="w-full max-w-md space-y-4">
-                <Dropdown
-                    label="Vehicle Make:"
-                    options={makes}
-                    value={selectedMake}
-                    onChange={e => setSelectedMake(e.target.value)}
-                    placeholder="Select a make"
-                />
-                <Dropdown
-                    label="Model Year:"
-                    options={years.map(year => ({
-                        value: year,
-                        label: year,
-                    }))}
-                    value={selectedYear}
-                    onChange={e => setSelectedYear(e.target.value)}
-                    placeholder="Select a year"
-                />
-                <Link href={`/result/${selectedMake}/${selectedYear}`} passHref>
-                    <button
-                        disabled={!selectedMake || !selectedYear}
-                        className="mt-4 w-full rounded-md bg-blue-500 py-2 text-white disabled:bg-gray-400"
+        <div
+            className="columns is-centered is-vcentered"
+            style={{ minHeight: '100vh' }}
+        >
+            <div className="column is-half">
+                <div className="bg-light flex flex-col items-center justify-center p-4">
+                    <h1
+                        className="title has-text-centered is-3 mb-6"
                     >
-                        Next
-                    </button>
-                </Link>
+                        Choose your Vehicle
+                    </h1>
+                    <div className="w-full">
+                        <Dropdown
+                            label="Vehicle Make:"
+                            options={makes}
+                            value={selectedMake}
+                            onChange={e => setSelectedMake(e.target.value)}
+                            placeholder="Select a make"
+                        />
+                        <Dropdown
+                            label="Model Year:"
+                            options={years.map(year => ({
+                                value: year,
+                                label: year,
+                            }))}
+                            value={selectedYear}
+                            onChange={e => setSelectedYear(e.target.value)}
+                            placeholder="Select a year"
+                        />
+                        <Link
+                            href={`/result/${selectedMake}/${selectedYear}`}
+                            passHref
+                        >
+                            <button
+                                disabled={!selectedMake || !selectedYear}
+                                className={`is-fullwidth button is-primary is-rounded mt-4 ${!selectedMake || !selectedYear ? 'is-disabled' : ''}`}
+                            >
+                                Next
+                            </button>
+                        </Link>
+                    </div>
+                </div>
             </div>
         </div>
     );

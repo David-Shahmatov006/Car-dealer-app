@@ -12,14 +12,13 @@ async function fetchData(makeId, year) {
 export default async function VehicleList({ makeId, year }) {
     const data = await fetchData(makeId, year);
 
-    if (!data || data.length === 0) {
-        return <p>Sorry, but no data for the selected brand and year =(</p>;
-    }
-
     return (
-        <ul className="max-h-[300px] overflow-y-auto rounded-lg p-10 shadow-xl">
+        <ul
+            style={{ maxHeight: '300px', overflowY: 'auto' }}
+            className="box has-shadow rounded-lg p-10"
+        >
             {data.map(model => (
-                <li className="text-xl" key={uuidv4()}>
+                <li className="is-size-4" key={uuidv4()}>
                     {model.Model_Name}
                 </li>
             ))}

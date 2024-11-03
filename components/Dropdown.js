@@ -6,23 +6,26 @@ export default function Dropdown({
     placeholder,
 }) {
     return (
-        <div>
-            <label className="block text-gray-700">{label}</label>
-            <select
-                value={value}
-                onChange={onChange}
-                className="w-full rounded-md border px-3 py-2"
-            >
-                <option value="">{placeholder}</option>
-                {options.map(option => (
-                    <option
-                        key={option.value || option}
-                        value={option.value || option}
+        <div className="field">
+            <label className="label">{label}</label>
+            <div className="control">
+                <div className="select is-fullwidth">
+                    <select
+                        value={value}
+                        onChange={onChange}
                     >
-                        {option.label || option}
-                    </option>
-                ))}
-            </select>
+                        <option value="">{placeholder}</option>
+                        {options.map(option => (
+                            <option
+                                key={option.value || option}
+                                value={option.value || option}
+                            >
+                                {option.label || option}
+                            </option>
+                        ))}
+                    </select>
+                </div>
+            </div>
         </div>
     );
 }
