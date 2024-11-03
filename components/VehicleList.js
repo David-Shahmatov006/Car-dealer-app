@@ -12,6 +12,10 @@ async function fetchData(makeId, year) {
 export default async function VehicleList({ makeId, year }) {
     const data = await fetchData(makeId, year);
 
+    if (!data || !Array.isArray(data)) {
+        return <p>Sorry something went wrong</p>;
+    }
+
     return (
         <ul
             style={{ maxHeight: '300px', overflowY: 'auto' }}
