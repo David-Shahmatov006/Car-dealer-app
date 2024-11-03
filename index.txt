@@ -1,6 +1,6 @@
 1:HL["/Car-dealer-app/_next/static/css/2770cbc5d418c159.css",{"as":"style"}]
 2:HL["/Car-dealer-app/_next/static/css/322b6b780ba77b73.css",{"as":"style"}]
-0:["wKd4l9C6ZVd2_PC_Ithu_",[[["",{"children":["__PAGE__",{}]},"$undefined","$undefined",true],"$L3",[[["$","link","0",{"rel":"stylesheet","href":"/Car-dealer-app/_next/static/css/2770cbc5d418c159.css","precedence":"next"}],["$","link","1",{"rel":"stylesheet","href":"/Car-dealer-app/_next/static/css/322b6b780ba77b73.css","precedence":"next"}]],"$L4"]]]]
+0:["u53G_4cn7110Kei-gAcKc",[[["",{"children":["__PAGE__",{}]},"$undefined","$undefined",true],"$L3",[[["$","link","0",{"rel":"stylesheet","href":"/Car-dealer-app/_next/static/css/2770cbc5d418c159.css","precedence":"next"}],["$","link","1",{"rel":"stylesheet","href":"/Car-dealer-app/_next/static/css/322b6b780ba77b73.css","precedence":"next"}]],"$L4"]]]]
 5:I{"id":7767,"chunks":["272:static/chunks/webpack-21d8b19258728bcf.js","971:static/chunks/fd9d1056-9200b628bfbdc6da.js","596:static/chunks/596-942dafd1c0df3bac.js"],"name":"default","async":false}
 6:I{"id":7920,"chunks":["272:static/chunks/webpack-21d8b19258728bcf.js","971:static/chunks/fd9d1056-9200b628bfbdc6da.js","596:static/chunks/596-942dafd1c0df3bac.js"],"name":"default","async":false}
 8:I{"id":4839,"chunks":["272:static/chunks/webpack-21d8b19258728bcf.js","971:static/chunks/fd9d1056-9200b628bfbdc6da.js","596:static/chunks/596-942dafd1c0df3bac.js"],"name":"default","async":false}
