@@ -57,9 +57,4 @@ To get started with the Car Dealer Application, follow the instructions below:
 4. Running the Application
     - npm run dev
 
-**PREVIEW**
-![](./public/preview.png)
-![](./public/preview2.png)
-
-
 **SEE YOU ON THE INTERVIEW :wink:**
